@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson-24</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <label for="city">По якому місту вивести погоду?</label>
+    <input type="text" name="city" id="city" placeholder="Київ">
+    <button>Давай інфу</button>
+    <div class="weather">
+        <p>Зараз в місті <span class="city"></span>:</p>
+        <p>Вологість: <span class="humidity"></span>%</p>
+        <p>Тиск: <span class="pressure"></span> hPa</p>
+        <p>Вітер: <span class="speed"></span> км/год, <span class="deg"></span> SSE</p>
+        <p>Температура: <span class="temp"></span><sup> o</sup>C</p>
+        <img class="icon" src="" width="150" alt="">
+        <p class="description"></p>
+
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
