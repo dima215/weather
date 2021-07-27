@@ -73,7 +73,7 @@ function cityWeather() {
   let city = document.querySelector('input');
   console.log(city.value);
 
-  fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city.value}&units=metric&APPID=5d066958a60d315387d9492393935c19`)
+  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city.value}&units=metric&APPID=5d066958a60d315387d9492393935c19`)
   .then(res => res.json())
     .then(data => {
       let name = data.name;
@@ -85,7 +85,7 @@ function cityWeather() {
       let deg = data.wind.deg;
       let icon = data.weather[0].icon;
       
-      img.setAttribute("src", `http://openweathermap.org/img/w/${icon}.png`);
+      img.setAttribute("src", `https://openweathermap.org/img/w/${icon}.png`);
 
       cityName.textContent = name;
       citytemp.textContent = temp;
